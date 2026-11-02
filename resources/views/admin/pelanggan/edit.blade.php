@@ -113,7 +113,7 @@
                         </span>
                         <span class="sidebar-text">Dashboard</span>
                     </a>
-                    <!-- Tambahkan blok kode ini -->
+                </li>
                 <li class="nav-item  active ">
                     <a href="" class="nav-link">
                         <span class="sidebar-icon">
@@ -128,38 +128,37 @@
                         <span class="sidebar-text">Pelanggan</span>
                     </a>
                 </li>
-                </li>
-
-                <li role="separator" class="dropdown-divider mt-4 mb-3 border-gray-700"></li>
-                <li class="nav-item">
-                    <a href="https://themesberg.com/docs/volt-bootstrap-5-dashboard/getting-started/quick-start/"
-                        target="_blank" class="nav-link d-flex align-items-center">
-                        <span class="sidebar-icon">
-                            <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </span>
-                        <span class="sidebar-text">Documentation <span
-                                class="badge badge-sm bg-secondary ms-1 text-gray-800">v1.4</span></span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="../../pages/upgrade-to-pro.html"
-                        class="btn btn-secondary d-flex align-items-center justify-content-center btn-upgrade-pro">
-                        <span class="sidebar-icon d-inline-flex align-items-center justify-content-center">
-                            <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </span>
-                        <span>Upgrade to Pro</span>
-                    </a>
-                </li>
+            </ul>
+            <li role="separator" class="dropdown-divider mt-4 mb-3 border-gray-700"></li>
+            <li class="nav-item">
+                <a href="https://themesberg.com/docs/volt-bootstrap-5-dashboard/getting-started/quick-start/"
+                    target="_blank" class="nav-link d-flex align-items-center">
+                    <span class="sidebar-icon">
+                        <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </span>
+                    <span class="sidebar-text">Documentation <span
+                            class="badge badge-sm bg-secondary ms-1 text-gray-800">v1.4</span></span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="../../pages/upgrade-to-pro.html"
+                    class="btn btn-secondary d-flex align-items-center justify-content-center btn-upgrade-pro">
+                    <span class="sidebar-icon d-inline-flex align-items-center justify-content-center">
+                        <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </span>
+                    <span>Upgrade to Pro</span>
+                </a>
+            </li>
             </ul>
         </div>
     </nav>
@@ -345,124 +344,8 @@
                         </a>
                     </li>
                     <li class="breadcrumb-item"><a href="#">Pelanggan</a></li>
-                    <li class="breadcrumb-item active" aria-current="page"> edit Pelanggan</li>
+                    <li class="breadcrumb-item active" aria-current="page"> Edit Pelanggan</li>
                 </ol>
             </nav>
             <div class="d-flex justify-content-between w-100 flex-wrap">
-                <div class="mb-3 mb-lg-0">
-                    <h1 class="h4"> edit Pelanggan</h1>
-                    <p class="mb-0">Form untuk menambahkan data pelanggan baru.</p>
-                </div>
-                <div>
-                    <a href="" class="btn btn-primary"><i class="far fa-question-circle me-1"></i> Kembali</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12 mb-4">
-                <div class="card border-0 shadow components-section">
-                    <div class="card-body">
-                        <form action="{{ route('pelanggan.update', $dataPelanggan->pelanggan_id) }}" method="POST">
-                            @csrf
-                            @method('PUT')
-                            <div class="row mb-4">
-                                <div class="col-lg-4 col-sm-6">
-                                    <!-- First Name -->
-                                    <div class="mb-3">
-                                        <label for="first_name" class="form-label">First name</label>
-                                        <input type="text" id="first_name" class="form-control" name="first_name" value="{{ $dataPelanggan->first_name }}" required>
-                                    </div>
-
-                                    <!-- Last Name -->
-                                    <div class="mb-3">
-                                        <label for="last_name" class="form-label">Last name</label>
-                                        <input type="text" id="last_name" class="form-control" name="last_name" value="{{ $dataPelanggan->last_name }}"
-                                            required>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-sm-6">
-                                    <!-- Birthday -->
-                                    <div class="mb-3">
-                                        <label for="birthday" class="form-label">Birthday</label>
-                                        <input type="date" id="birthday" class="form-control" name="birthday" value="{{ $dataPelanggan->birthday }}">
-                                    </div>
-
-                                    <!-- Gender -->
-                                    <div class="mb-3">
-                                        <label for="gender" class="form-label">Gender</label>
-                                        <select id="gender" name="gender" class="form-select" name="gender" >
-                                            <option selected>Gender</option>
-                                            <opt value="Female"{{ $dataPelanggan->gender == 'famale' ? 'selected' : '' }} >Female</opt>
-                                            <option value="Male"{{ $dataPelanggan->gender == 'male' ? 'selected' : '' }} >Male</option>
-                                            <option value="Other">Other</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-sm-12">
-                                    <!-- Email -->
-                                    <div class="mb-3">
-                                        <label for="email" class="form-label">Email</label>
-                                        <input type="text" id="email" class="form-control" name="email" value="{{ $dataPelanggan->email }}">
-                                    </div>
-
-                                    <!-- Phone -->
-                                    <div class="mb-3">
-                                        <label for="phone" class="form-label">Phone</label>
-                                        <input type="text" id="phone" class="form-control" name="phone"value="{{ $dataPelanggan->phone }}">
-                                    </div>
-
-                                    <!-- Buttons -->
-                                    <div class="btn-info">
-                                        <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
-                                        <a href="{{ route('pelanggan.index') }}"
-                                            class="btn btn-outline-secondary ms-2">Batal</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <footer class="bg-white rounded shadow p-5 mb-4 mt-4">
-            <div class="row">
-                <div class="col-12 col-md-4 col-xl-6 mb-4 mb-md-0">
-                    <p class="mb-0 text-center text-lg-start">© 2019-<span class="current-year"></span> <a
-                            class="text-primary fw-normal" href="https://themesberg.com"
-                            target="_blank">Themesberg</a></p>
-                </div>
-                <div class="col-12 col-md-8 col-xl-6 text-center text-lg-start">
-                    <!-- List -->
-                    <ul class="list-inline list-group-flush list-group-borderless text-md-end mb-0">
-                        <li class="list-inline-item px-0 px-sm-2">
-                            <a href="https://themesberg.com/about">About</a>
-                        </li>
-                        <li class="list-inline-item px-0 px-sm-2">
-                            <a href="https://themesberg.com/themes">Themes</a>
-                        </li>
-                        <li class="list-inline-item px-0 px-sm-2">
-                            <a href="https://themesberg.com/blog">Blog</a>
-                        </li>
-                        <li class="list-inline-item px-0 px-sm-2">
-                            <a href="https://themesberg.com/contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
-    </main>
-
-    <!-- Core -->
-    <script src="{{ asset('assets-admin/vendor/@popperjs/core/dist/umd/popper.min.js') }}"></script>
-    <script src="{{ asset('assets-admin/vendor/bootstrap/dist/js/bootstrap.min.js') }}"></script>
-
-    <!-- Volt JS -->
-    <script src="{{ asset('assets-admin/js/volt.js') }}"></script>
-</body>
-
-</html>
+                <div class="mb-3 mb-lg-0"
