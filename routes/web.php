@@ -12,8 +12,9 @@ use App\Http\Controllers\DashboardController;
 
 use App\Http\Controllers\PelangganController;
 
+use App\Http\Controllers\UserController;
 
-Route::get('/', function(){
+Route::get('/', function () {
     return view('welcome');
 });
 
@@ -21,16 +22,19 @@ Route::get('/pcr', function () {
     return 'Selamat Datang di Website Kampus PCR!';
 });
 
+Route::get('/nama/{Rayhand}', function ($param1) {
+    return 'Nama saya: '.$param1;
+});
 
-Route::get('/mahasiswa', function () {
-    return 'Halo Mahasiswa';
+Route::get('/nim/{param1?}', function ($param1 = '') {
+    return 'NIM saya: '.$param1;
 });
 
 Route::get('/mahasiswa', function () {
     return 'Halo Mahasiswa';
 })->name('mahasiswa.show');
 
-Route::get('/mahasiswa/(param1)', [MahasiswaController::class, 'show']);
+Route::get('/mahasiswa/{param1}', [MahasiswaController::class, 'show']);
 
 Route::get('/about', function () {
     return view('halaman-about');
@@ -41,13 +45,13 @@ Route::get('/home',[HomeController::class, 'index']);
 Route::post('question/store', [QuestionController::class, 'store'])
 		->name('question.store');
 
-Route::get('/home-question-respon', function () {
-    return view('home-question-respon');
+
+Route::get('/home-question-respon', function() {
+    return view ('home-question-respon');
 })->name('home-question-respon');
 
-Route::get('dashboard',[DashboardController::class,
-'index'])->name('dashboard');
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
 Route::resource('pelanggan', PelangganController::class);
 
-
+Route::resource('user', UserController::class);
