@@ -424,10 +424,9 @@
                                     </div>
 
                                     <!-- Buttons -->
-                                    <div class="btn-info    ">
-                                        <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
-                                        <a href="{{ route('pelanggan.index') }}"
-                                            class="btn btn-outline-secondary ms-2">Batal</a>
+                                    <div class="mt-3"> 
+                                        <button type="submit" class="btn btn-gray-800">Simpan Perubahan</button>
+                                        <a href="{{ route('pelanggan.index') }}" class="btn btn-outline-gray-800">Batal</a>
                                     </div>
                                 </div>
                             </div>

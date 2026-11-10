@@ -359,8 +359,8 @@ The above copyright notice and this permission notice shall be included in all c
             </nav>
             <div class="d-flex justify-content-between w-100 flex-wrap">
                 <div class="mb-3 mb-lg-0">
-                    <h1 class="h4">Tambah User</h1>
-                    <p class="mb-0">Form untuk menambahkan data user baru.</p>
+                    <h1 class="h4">Edit User</h1>
+                    <p class="mb-0">Form untuk Mengubah data user baru.</p>
                 </div>
                 <div>
                     <a href="" class="btn btn-primary"><i class="far fa-question-circle me-1"></i> Kembali</a>
@@ -378,35 +378,39 @@ The above copyright notice and this permission notice shall be included in all c
                             @method('PUT')
                             <div class="row mb-4">
                                 <div class="col-lg-4 col-sm-6">
-                                    <!-- Name -->
-                                    <div class="mb-3">
-                                        <label for="name" class="form-label">name</label>
-                                        <input type="text" name="name"
-                                            value="{{ old('name', $dataUser->name) }}">
-                                    </div>
+                                    <div class="row">
+                <!-- Kolom Name -->
+                <div class="col-md-6 mb-3">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Masukkan nama" required>
+                </div>
 
-                                    <div class="col-lg-4 col-sm-12">
-                                        <!-- Email -->
-                                        <div class="mb-3">
-                                            <label for="email" class="form-label">Email</label>
-                                            <input type="email" name="email"
-                                                value="{{ old('email', $dataUser->email) }}">
-                                        </div>
+                <!-- Kolom Email -->
+                <div class="col-md-6 mb-3">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Masukkan email" required>
+                </div>
+            </div>
 
+            <div class="row">
+                <!-- Kolom Password -->
+                <div class="col-md-6 mb-3">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Masukkan password" required>
+                </div>
 
-                                        <!-- Password -->
-                                        <div class="mb-3">
-                                            <label for="password" class="form-label">Password</label>
-                                            <input type="password" name="password">
-                                        </div>
-                                        <input type="password" name="password_confirmation">
+                <!-- Kolom Konfirmasi Password (jika ada) -->
+                <div class="col-md-6 mb-3">
+                    <label for="password_confirmation">Confirm Password</label>
+                    <input type="password" name="password_confirmation" id="password_confirmation" class="form-control" placeholder="Ulangi password">
+                </div>
+            </div>
 
-                                        <!-- Buttons -->
-                                        <div class="">
-                                            <button type="submit" class="btn btn-primary">Simpan</button>
-                                            <a href="{{ route('pelanggan.index') }}"
-                                                class="btn btn-outline-secondary ms-2">Batal</a>
-                                        </div>
+            <!-- Tombol Aksi Sejajar -->
+            <div class="mt-3">
+                <button type="submit" class="btn btn-gray-800">Simpan</button>
+                <a href="{{ route('user.index') }}" class="btn btn-outline-gray-800">Batal</a>
+            </div>
                                     </div>
                                 </div>
                         </form>
